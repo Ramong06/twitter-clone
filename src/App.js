@@ -1,11 +1,18 @@
 import './App.css';
+import Sidebar from "./Components/Sidebar";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
         <h1>Twitter-Clone</h1>
-      </header>
+
+      {/* sidebar */}
+      <Sidebar />
+      
+      {/* feed */}
+
+      {/* widgets */}
+
     </div>
   );
 }
