@@ -10,6 +10,7 @@ import Bookmarks from "@material-ui/icons/Bookmark";
 import Lists from "@material-ui/icons/List";
 import PersonOutline from "@material-ui/icons/PersonOutline";
 import MoreHorizOutlined from "@material-ui/icons/MoreHorizOutlined";
+import { Button } from "@material-ui/core";
 
 
 
@@ -17,8 +18,10 @@ import MoreHorizOutlined from "@material-ui/icons/MoreHorizOutlined";
 const Sidebar = () => {
     return (
         <div className="sidebar">
+
             {/* Twitter icon */}
             <TwitterIcon />
+
             {/* SidebarOptions */}
             <SidebarOption active  Icon={HomeIcon} text="Home" />
             <SidebarOption Icon={SearchIcon} text="Explore" />
@@ -30,6 +33,7 @@ const Sidebar = () => {
             <SidebarOption Icon={MoreHorizOutlined} text="More" />
 
             {/* Button -> Tweet */}
+            <Button variant="outlined" className="sidebar__tweet" fullWidth>Tweet</Button>
         </div>
     );
 }
