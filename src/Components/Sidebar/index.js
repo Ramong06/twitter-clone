@@ -20,7 +20,7 @@ const Sidebar = () => {
             {/* Twitter icon */}
             <TwitterIcon />
             {/* SidebarOptions */}
-            <SidebarOption Icon={HomeIcon} text="Home" />
+            <SidebarOption active  Icon={HomeIcon} text="Home" />
             <SidebarOption Icon={SearchIcon} text="Explore" />
             <SidebarOption Icon={NotificationsNone} text="Notifications" />
             <SidebarOption Icon={Messages} text="Messages" />
