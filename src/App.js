@@ -5,7 +5,6 @@ import Feed from "./Components/Feed";
 function App() {
   return (
     <div className="App">
-        <h1>Ramon's-Twitter-Clone</h1>
 
       {/* sidebar */}
       <Sidebar />

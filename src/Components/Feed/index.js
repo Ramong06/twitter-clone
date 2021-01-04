@@ -2,7 +2,7 @@ import React from 'react'
 
 const Feed = () => {
     return (
-        <div>
+        <div className="apps">
             {/* HEADER */}
             <h2>This is the Feed Header</h2>
 
