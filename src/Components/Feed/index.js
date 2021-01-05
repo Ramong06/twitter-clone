@@ -1,13 +1,15 @@
 import React from 'react'
+import "./style.css";
 
 const Feed = () => {
     return (
-        <div className="apps">
+        <div>
             {/* HEADER */}
-            <h2>This is the Feed Header</h2>
+            <div className="feed">
+            <h2>Home</h2>
 
             {/* TWEETBOX */}
-            <h4>This is where you write your tweet</h4>
+
 
             {/* POST */}
             <h5>Tweet</h5>
@@ -21,7 +23,8 @@ const Feed = () => {
             <h5>Tweet</h5>
             {/* POST */}
             <h5>Tweet</h5>
-
+            
+            </div>
         </div>
     )
 }
