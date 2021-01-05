@@ -5,9 +5,9 @@ import SidebarOption from "../SidebarOption";
 import HomeIcon from "@material-ui/icons/Home";
 import SearchIcon from "@material-ui/icons/Search";
 import NotificationsNone from "@material-ui/icons/NotificationsNone";
-import Messages from "@material-ui/icons/Message";
-import Bookmarks from "@material-ui/icons/Bookmark";
-import Lists from "@material-ui/icons/List";
+import Mail from "@material-ui/icons/MailOutline";
+import Bookmarks from "@material-ui/icons/BookmarkBorder";
+import Lists from "@material-ui/icons/ListAlt";
 import PersonOutline from "@material-ui/icons/PersonOutline";
 import MoreHorizOutlined from "@material-ui/icons/MoreHorizOutlined";
 import { Button } from "@material-ui/core";
@@ -26,7 +26,7 @@ const Sidebar = () => {
             <SidebarOption active  Icon={HomeIcon} text="Home" />
             <SidebarOption Icon={SearchIcon} text="Explore" />
             <SidebarOption Icon={NotificationsNone} text="Notifications" />
-            <SidebarOption Icon={Messages} text="Messages" />
+            <SidebarOption Icon={Mail} text="Messages" />
             <SidebarOption Icon={Bookmarks} text="Bookmarks" />
             <SidebarOption Icon={Lists} text="Lists" />
             <SidebarOption Icon={PersonOutline} text="Profile" />
