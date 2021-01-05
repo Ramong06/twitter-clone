@@ -3,26 +3,15 @@ import "./style.css";
 
 const Feed = () => {
     return (
-        <div>
+        <div className="feed">
             {/* HEADER */}
-            <div className="feed">
+            <div className="feed__header">
             <h2>Home</h2>
 
             {/* TWEETBOX */}
 
 
             {/* POST */}
-            <h5>Tweet</h5>
-            {/* POST */}
-            <h5>Tweet</h5>
-            {/* POST */}
-            <h5>Tweet</h5>
-            {/* POST */}
-            <h5>Tweet</h5>
-            {/* POST */}
-            <h5>Tweet</h5>
-            {/* POST */}
-            <h5>Tweet</h5>
             
             </div>
         </div>
