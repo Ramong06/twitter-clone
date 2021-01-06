@@ -11,10 +11,10 @@ const TweetBox = () => {
                     <input placeholder="What's Happening?" type="text" />
                     {/* <input placeholder="Enter Image URL" type="text" /> */}
                 </div>
-                <Button>Tweet</Button>
+                <Button className="tweetBox__button">Tweet</Button>
             </form>
         </div>
     )
 }
 
-export default TweetBox
+export default TweetBox;
