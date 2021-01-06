@@ -15,7 +15,7 @@ const Post = ({ displayName, username, verified, text, image, avatar }) => {
                         <h3>
                             Ramon Garza
                             <span>
-                                <VerifiedUserIcon className="post__badge" />    
+                                <VerifiedUserIcon className="post__badge" /> @rgtercero5406   
                             </span>
                         </h3>
                     </div>
