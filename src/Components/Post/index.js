@@ -3,9 +3,9 @@ import React from 'react'
 import "./style.css";
 import VerifiedUserIcon from "@material-ui/icons/VerifiedUser"
 import ChatBubbleOutlineIcon from "@material-ui/icons/ChatBubbleOutline";
-import RepeatIcon from "@material-ui/icons/RepeatOneOutlined";
+import RepeatIcon from "@material-ui/icons/Repeat";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorderOutlined";
-import PublishIcon from "@material-ui/icons/PublishOutlined";
+import PublishIcon from "@material-ui/icons/Publish";
 
 const Post = ({ displayName, username, verified, text, image, avatar }) => {
     return (
@@ -18,7 +18,7 @@ const Post = ({ displayName, username, verified, text, image, avatar }) => {
                     <div className="post__headerText">
                         <h3>
                             Ramon Garza
-                            <span>
+                            <span className="post__headerSpecial">
                                 <VerifiedUserIcon className="post__badge" /> @rgtercero5406   
                             </span>
                         </h3>

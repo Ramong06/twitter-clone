@@ -17,6 +17,11 @@ const Feed = () => {
 
             {/* POST */}
             <Post />
+            <Post />
+            <Post />
+            <Post />
+            <Post />
+            <Post />
             
             
             
