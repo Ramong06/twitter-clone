@@ -1,5 +1,5 @@
+import React, { forwardRef } from 'react';
 import { Avatar } from '@material-ui/core';
-import React from 'react'
 import "./style.css";
 import VerifiedUserIcon from "@material-ui/icons/VerifiedUser"
 import ChatBubbleOutlineIcon from "@material-ui/icons/ChatBubbleOutline";
@@ -7,9 +7,16 @@ import RepeatIcon from "@material-ui/icons/Repeat";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorderOutlined";
 import PublishIcon from "@material-ui/icons/Publish";
 
-const Post = ({ displayName, username, verified, text, image, avatar }) => {
+const Post = forwardRef(({
+    displayName,
+    username,
+    verified,
+    text,
+    image,
+    avatar
+}, ref) => {
     return (
-        <div className="post">
+        <div className="post" ref={ref}>
             <div className="post__avatar">
                 <Avatar src={avatar} />
             </div>
@@ -19,7 +26,7 @@ const Post = ({ displayName, username, verified, text, image, avatar }) => {
                         <h3>
                             {displayName}{""}
                             <span className="post__headerSpecial">
-                                {verified && <VerifiedUserIcon className="post__badge" />} @{username} 
+                                {verified && <VerifiedUserIcon className="post__badge" />} @{username}
                             </span>
                         </h3>
                     </div>
@@ -27,7 +34,7 @@ const Post = ({ displayName, username, verified, text, image, avatar }) => {
                         <p>{text}</p>
                     </div>
                 </div>
-                <img src={image} alt="user-post" />
+                <img src={image} />
                 <div className="post__footer">
                     <ChatBubbleOutlineIcon fontSize="small" />
                     <RepeatIcon fontSize="small" />
@@ -37,6 +44,6 @@ const Post = ({ displayName, username, verified, text, image, avatar }) => {
             </div>
         </div>
     )
-}
+});
 
 export default Post;
