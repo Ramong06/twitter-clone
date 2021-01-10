@@ -10,7 +10,7 @@ const Feed = () => {
 
       useEffect(() => {
           db.collection("posts").onSnapshot(snapshot => (
-            setPosts(snapshot.docs.map(doc => doc.id()))
+            setPosts(snapshot.docs.map(doc => doc.data()))
         ))
   }, []);
 
@@ -25,7 +25,7 @@ const Feed = () => {
             <FlipMove>
                 {posts.map((post) => (
                     < Post
-                        key={"8e1JDw72yQw0giZuBRss"}
+                        key={post.text}
                         displayName={post.displayName}
                         username={post.username}
                         verified={post.verified}

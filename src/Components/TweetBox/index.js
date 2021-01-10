@@ -39,7 +39,7 @@ const TweetBox = () => {
                     value={tweetImage}
                     onChange={(e) => setTweetImage(e.target.value)}
                     className="tweetBox__imageInput"
-                    placeholder="Optional: Enter Image URL"
+                    // placeholder="Optional: Enter Image URL"
                     type="text"
                 />
                 <Button onClick={sendTweet} type="submit" className="tweetBox__button">
