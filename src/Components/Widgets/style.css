@@ -5,7 +5,8 @@
 .widgets__input {
     display: flex;
     align-items: center;
-    background-color: var(--twitter-background);
+    /* background-color: var(--twitter-background); */
+    background-color: transparent;
     padding: 10px;
     border-radius: 20px;
     margin-top: 10px;
@@ -14,7 +15,8 @@
 
 .widgets__input > input {
     border: none;
-    background-color: var(--twitter-background);
+    /* background-color: var(--twitter-background); */
+    background-color: transparent;
 }
 
 .widgets__searchIcon {
@@ -25,7 +27,8 @@
     margin-top: 15px;
     margin-left: 20px;
     padding: 20px;
-    background-color: #f5f8fa;
+    /* background-color: #f5f8fa; */
+    background-color: transparent;
     border-radius: 20px;
 }
 

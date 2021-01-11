@@ -10,7 +10,6 @@ import Bookmarks from "@material-ui/icons/BookmarkBorder";
 import Lists from "@material-ui/icons/ListAlt";
 import PersonOutline from "@material-ui/icons/PersonOutline";
 import MoreHorizOutlined from "@material-ui/icons/MoreHorizOutlined";
-import Switch from "../Switch";
 import { Button } from "@material-ui/core";
 
 
