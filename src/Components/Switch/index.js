@@ -8,7 +8,6 @@ import FormControl from "@material-ui/core/FormControl";
 const DarkMode = () => {
     return (
         <div className="darkMode__toggle">
-            <h4>Switch to Dark Mode</h4>
             <FormControl component="fieldset">
                 <FormGroup aria-label="position" row>
                     <FormControlLabel
