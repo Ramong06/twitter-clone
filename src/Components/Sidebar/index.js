@@ -35,7 +35,6 @@ const Sidebar = () => {
 
             {/* Button -> Tweet */}
             <Button variant="outlined" className="sidebar__tweet" fullWidth>Tweet</Button>
-            <Switch />
         </div>
     );
 }

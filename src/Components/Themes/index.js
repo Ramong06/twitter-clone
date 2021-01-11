@@ -1,19 +1,32 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from "styled-components"
 
 export const lightTheme = {
-    body: "#fff",
-    fontColor: "#000"
+    body: '#FFF',
+    text: '#363537',
+    toggleBorder: '#FFF',
+    background: '#363537',
 }
-
 export const darkTheme = {
-    body: "#000",
-    fontColor: "#fff"
+    body: '#363537',
+    text: '#FAFAFA',
+    toggleBorder: '#6B8096',
+    background: '#999',
 }
 
 export const GlobalStyles = createGlobalStyle`
+  body {
+    background: ${({ theme }) => theme.body};
+    color: ${({ theme }) => theme.text};
+    font-family: Tahoma, Helvetica, Arial, Roboto, sans-serif;
+    transition: all 0.50s linear;
+  }
+  `
 
-    body {
-        background-color: ${(props) => props.theme.body};
-    }
 
-`
+// export const GlobalStyles = createGlobalStyle`
+
+//     body {
+//         background-color: ${(props) => props.theme.body};
+//     }
+
+// `
