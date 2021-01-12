@@ -1,5 +1,6 @@
 import React, { useState }from "react";
 import Switch from "@material-ui/core/Switch";
+import Brightness from "@material-ui/icons/Brightness2"
 import FormGroup from "@material-ui/core/FormGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import FormControl from "@material-ui/core/FormControl";
@@ -28,12 +29,15 @@ const DarkMode = () => {
                         value="top"
                         control={
                             <Switch
-                              onClick={() => themeToggler()}
+                              className="darkMode__switch"
+                                onClick={() => themeToggler()}
+                                
                             />
-                        }
-                        label="Dark Mode"
-                        labelPlacement="top"
-                    />
+                            }
+                              label="Dark Mode"
+                              labelPlacement="top"
+                            />
+                    <Brightness />        
                 </FormGroup>
             </FormControl>
             </div>
